@@ -150,62 +150,42 @@ Desarrollar una aplicación de escritorio que facilite la administración de dat
 
 ## Requisitos
 
-- requisitos funcionales
+ #Requisitos funcionales
+-Permitir registrar, editar y eliminar datos de mascotas (nombre, especie, raza, edad, peso, etc.).
 
- 
-## Arquitectura de software
+-Asociar cada mascota con su respectivo dueño.
 
-Será una aplicación de escritorio hecha con el lenguaje C#, siguiendo una arquitetura MVC, la base de datos será MySQL
-ChatGPT dijo:
-Perfecto, acá tenés tu archivo .md con los requisitos funcionales ya integrados y redactados de forma simplificada y coherente con el nivel de detalle esperado en una simulación de Scrum:
+-Registrar y consultar datos de dueños (nombre, contacto, dirección, etc.).
 
-Especificación de requisitos de software
-Enunciado del problema
-La veterinaria enfrenta actualmente el desafío de manejar una gran cantidad de datos relacionados con las mascotas. El área que presenta mayores dificultades es la clínica, debido a la necesidad de registrar individualmente a cada mascota. La principal expectativa con respecto a la solución es el ahorro de tiempo.
+-Registrar consultas clínicas con información de diagnóstico, tratamiento y veterinario responsable.
 
-Clientes potenciales
-El usuario principal será el veterinario y cuenta con un dispositivo para su implementación.
+-Registrar intervenciones, vacunaciones o estudios realizados.
 
-Solución propuesta
-Desarrollar una aplicación de escritorio que facilite la administración de datos clínicos de mascotas, el seguimiento de consultas e intervenciones y envío automatizado de recordatorios importantes de los dueños de las mascotas.
+-Consultar el historial clínico completo de una mascota.
 
-Requisitos
-- Requisitos funcionales
-Permitir registrar, editar y eliminar datos de mascotas (nombre, especie, raza, edad, peso, etc.).
+-Generar recordatorios automáticos de vacunación, controles o tratamientos.
 
-Asociar cada mascota con su respectivo dueño.
+-Gestionar usuarios del sistema con autenticación mediante usuario y contraseña.
 
-Registrar y consultar datos de dueños (nombre, contacto, dirección, etc.).
+-Generar reportes de consultas y tratamientos por periodo.
 
-Registrar consultas clínicas con información de diagnóstico, tratamiento y veterinario responsable.
+-Almacenar toda la información en una base de datos MySQL.
 
-Registrar intervenciones, vacunaciones o estudios realizados.
+-Permitir realizar copias de seguridad de la base de datos.
 
-Consultar el historial clínico completo de una mascota.
+ #Requisitos no funcionales
+-Interfaz simple e intuitiva, orientada a uso por personal veterinario.
 
-Generar recordatorios automáticos de vacunación, controles o tratamientos.
+-Respuesta rápida en operaciones CRUD (menos de 2 segundos en condiciones normales).
 
-Gestionar usuarios del sistema con autenticación mediante usuario y contraseña.
+-Cumplimiento del patrón MVC para facilitar mantenimiento y escalabilidad.
 
-Generar reportes de consultas y tratamientos por periodo.
+-Cifrado de contraseñas y validación de datos de entrada.
 
-Almacenar toda la información en una base de datos MySQL.
+-Compatible con Windows 10 o superior y MySQL 8.0 o superior.
 
-Permitir realizar copias de seguridad de la base de datos.
+-Funcionamiento local sin requerir conexión a Internet (excepto para recordatorios por correo).
 
--Requisitos no funcionales
-Interfaz simple e intuitiva, orientada a uso por personal veterinario.
-
-Respuesta rápida en operaciones CRUD (menos de 2 segundos en condiciones normales).
-
-Cumplimiento del patrón MVC para facilitar mantenimiento y escalabilidad.
-
-Cifrado de contraseñas y validación de datos de entrada.
-
-Compatible con Windows 10 o superior y MySQL 8.0 o superior.
-
-Funcionamiento local sin requerir conexión a Internet (excepto para recordatorios por correo).
- 
 ## Arquitectura de software
 
 Será una aplicación de escritorio hecha con el lenguaje C#, siguiendo una arquitetura MVC, la base de datos será MySQL
