@@ -1,216 +1,200 @@
-Gestión de mascotas
-HU1 – Registrar mascota
+# Sistema de Gestión Veterinaria  
+### Historias de Usuario – Documento Funcional
 
-Como veterinario,
+---
 
-quiero registrar una nueva mascota con sus datos básicos (nombre, especie, raza, edad, sexo y peso),
+## Gestión de Mascotas
 
-para mantener un control completo de los pacientes.
-Criterios de aceptación:
+###  **HU1 – Registrar Mascota**
+**Como veterinario,**  
+quiero registrar una nueva mascota con sus datos básicos (nombre, especie, raza, edad, sexo y peso),  
+**para** mantener un control completo de los pacientes.
 
-Se debe poder ingresar todos los datos obligatorios.
+**Criterios de aceptación:**
+- Permite ingresar todos los datos obligatorios.
+- El sistema valida que no existan campos vacíos.
 
-El sistema valida que no existan campos vacíos.
+---
 
-HU2 – Modificar o eliminar mascota
+###  **HU2 – Modificar o Eliminar Mascota**
+**Como veterinario,**  
+quiero poder editar o eliminar los datos de una mascota existente,  
+**para** mantener actualizada la información del sistema.
 
-Como veterinario,
+**Criterios de aceptación:**
+- La edición permite guardar los cambios correctamente.
+- La eliminación requiere confirmación del usuario.
 
-quiero poder editar o eliminar los datos de una mascota existente,
+---
 
-para mantener actualizada la información del sistema.
-Criterios de aceptación:
+###  **HU3 – Asociar Mascota a Dueño**
+**Como veterinario,**  
+quiero vincular cada mascota con su respectivo dueño,  
+**para** acceder rápidamente a la información del propietario.
 
-Se debe permitir guardar los cambios realizados.
+**Criterios de aceptación:**
+- La mascota queda asociada a un dueño registrado.
+- No se permite registrar mascotas sin dueño.
 
-La eliminación debe requerir confirmación del usuario.
+---
 
-HU3 – Asociar mascota a dueño
+##  Gestión de Dueños
 
-Como veterinario,
+###  **HU4 – Registrar o Editar Dueño**
+**Como veterinario o asistente,**  
+quiero registrar y actualizar los datos personales de los dueños (nombre, DNI, teléfono, correo, dirección),  
+**para** mantener una base de datos precisa de clientes.
 
-quiero vincular cada mascota con su respectivo dueño,
+**Criterios de aceptación:**
+- Los datos se almacenan correctamente.
+- Los campos obligatorios se validan antes de guardar.
 
-para poder acceder rápidamente a la información del propietario.
-Criterios de aceptación:
+---
 
-La mascota debe quedar asociada a un dueño registrado.
+###  **HU5 – Consultar Historial de Mascotas por Dueño**
+**Como veterinario,**  
+quiero consultar todas las mascotas asociadas a un dueño,  
+**para** conocer su historial de atención.
 
-No se permite una mascota sin dueño asignado.
+**Criterios de aceptación:**
+- Se muestra una lista con las mascotas y su información básica.
+- Desde la lista se puede acceder al historial clínico de cada mascota.
 
-👤 Gestión de Dueños
+---
 
-HU4 – Registrar o editar dueño
+##  Gestión Clínica
 
-Como veterinario o asistente,
+###  **HU6 – Registrar Consulta Clínica**
+**Como veterinario,**  
+quiero registrar una consulta con fecha, motivo, diagnóstico, tratamiento y veterinario responsable,  
+**para** llevar un seguimiento médico de cada mascota.
 
-quiero registrar y actualizar los datos personales de los dueños (nombre, DNI, teléfono, correo, dirección),
+**Criterios de aceptación:**
+- Todos los campos pueden completarse.
+- La consulta se asocia automáticamente a la mascota y al veterinario.
 
-para mantener una base de datos precisa de los clientes.
-Criterios de aceptación:
+---
 
-Los datos deben almacenarse correctamente en la base de datos.
+###  **HU7 – Registrar Procedimientos Médicos**
+**Como veterinario,**  
+quiero registrar intervenciones, vacunas o estudios realizados,  
+**para** mantener actualizado el historial clínico.
 
-Los campos obligatorios deben validarse antes de guardar.
+**Criterios de aceptación:**
+- Se indica tipo de procedimiento y fecha.
+- La información queda asociada a la mascota.
 
-HU5 – Consultar historial de mascotas por dueño
+---
 
-Como veterinario,
+###  **HU8 – Consultar Historial Clínico**
+**Como veterinario,**  
+quiero consultar el historial clínico completo de una mascota,  
+**para** conocer su evolución médica.
 
-quiero consultar todas las mascotas asociadas a un dueño,
+**Criterios de aceptación:**
+- Se listan consultas, vacunas e intervenciones.
+- Permite filtrar por fecha o tipo de procedimiento.
 
-para conocer su historial de atención.
-Criterios de aceptación:
+---
 
-Se debe mostrar la lista de mascotas y su información básica.
+##  Recordatorios Automáticos
 
-Desde el listado se debe poder acceder al historial clínico de cada mascota.
+###  **HU9 – Generar Recordatorios Automáticos**
+**Como veterinario,**  
+quiero que el sistema genere recordatorios de vacunaciones, controles o tratamientos,  
+**para** asegurar el cumplimiento del calendario médico.
 
-🩺 Gestión Clínica
+**Criterios de aceptación:**
+- Se generan recordatorios según las fechas programadas.
+- Los recordatorios pueden visualizarse o enviarse automáticamente.
 
-HU6 – Registrar consulta clínica
+---
 
-Como veterinario,
+###  **HU10 – Configurar Frecuencia y Medio de Recordatorios**
+**Como usuario del sistema,**  
+quiero configurar la frecuencia y el medio de envío de los recordatorios,  
+**para** adaptarlos a las preferencias de los clientes.
 
-quiero registrar una consulta con fecha, motivo, diagnóstico, tratamiento y veterinario responsable,
+**Criterios de aceptación:**
+- Se puede elegir entre correo electrónico o notificación local.
+- El sistema guarda las preferencias de cada usuario.
 
-para llevar un seguimiento médico de cada mascota.
-Criterios de aceptación:
+---
 
-Todos los campos deben poder completarse.
+##  Gestión de Usuarios del Sistema
 
-La consulta se asocia automáticamente a la mascota y al veterinario.
+###  **HU11 – Inicio de Sesión de Veterinarios**
+**Como veterinario,**  
+quiero iniciar sesión con usuario y contraseña,  
+**para** acceder al sistema de forma segura.
 
-HU7 – Registrar procedimientos médicos
+**Criterios de aceptación:**
+- El sistema valida credenciales.
+- Se muestran mensajes de error si los datos son incorrectos.
 
-Como veterinario,
+---
 
-quiero registrar intervenciones, vacunas o estudios realizados,
+###  **HU12 – Control de Acceso por Roles**
+**Como administrador,**  
+quiero definir permisos según el rol del usuario,  
+**para** restringir el acceso a ciertas funciones.
 
-para mantener actualizado el historial clínico.
-Criterios de aceptación:
+**Criterios de aceptación:**
+- Solo administradores pueden modificar roles.
+- Cada usuario visualiza solo las funciones que le corresponden.
 
-Se debe indicar tipo de procedimiento y fecha.
+---
 
-La información queda asociada a la mascota.
+##  Reportes e Informes
 
-HU8 – Consultar historial clínico
+###  **HU13 – Generar Informes de Consultas**
+**Como veterinario o administrador,**  
+quiero generar informes de consultas por periodo de tiempo,  
+**para** analizar la actividad del consultorio.
 
-Como veterinario,
+**Criterios de aceptación:**
+- Se puede filtrar por fechas y veterinario.
+- El informe se muestra en pantalla.
 
-quiero consultar el historial clínico completo de una mascota,
+---
 
-para conocer su evolución médica.
-Criterios de aceptación:
+### ✅ **HU14 – Exportar Informes**
+**Como usuario,**  
+quiero exportar los informes a PDF o Excel,  
+**para** archivarlos o compartirlos.
 
-El sistema debe listar todas las consultas, vacunas e intervenciones.
+**Criterios de aceptación:**
+- Se permite elegir el formato.
+- El archivo generado contiene los datos visibles en pantalla.
 
-Debe permitir filtrado por fecha o tipo de procedimiento.
+---
 
-🔔 Recordatorios Automáticos
+##  Base de Datos y Seguridad
 
-HU9 – Generar recordatorios automáticos
+###  **HU15 – Almacenamiento de Información**
+**Como desarrollador o administrador,**  
+quiero que toda la información se guarde en una base de datos MySQL,  
+**para** asegurar integridad y persistencia de datos.
 
-Como veterinario,
+**Criterios de aceptación:**
+- La base de datos debe estar normalizada y correctamente estructurada.
 
-quiero que el sistema genere recordatorios de vacunaciones, controles o tratamientos,
+---
 
-para asegurar el cumplimiento del calendario médico.
-Criterios de aceptación:
+###  **HU16 – Copias de Seguridad**
+**Como administrador del sistema,**  
+quiero realizar copias de seguridad de la base de datos,  
+**para** prevenir pérdidas de información.
 
-El sistema debe crear recordatorios según las fechas programadas.
+**Criterios de aceptación:**
+- Permite generar backups manuales o programados.
+- El sistema confirma la creación correcta del respaldo.
 
-Los recordatorios deben visualizarse o enviarse automáticamente.
+---
+ **Documento completo, estilizado y listo para entregar.**
 
-HU10 – Configurar frecuencia y medio de recordatorios
-
-Como usuario del sistema,
-
-quiero configurar la frecuencia y el medio de envío de los recordatorios,
-
-para adaptarlos a las preferencias de los clientes.
-Criterios de aceptación:
-
-Se debe poder elegir entre correo electrónico o notificación local.
-
-El sistema guarda las preferencias de cada usuario.
-
-👩‍⚕️ Gestión de Usuarios del Sistema
-
-HU11 – Inicio de sesión de veterinarios
-
-Como veterinario,
-
-quiero iniciar sesión con usuario y contraseña,
-
-para acceder a las funciones del sistema de forma segura.
-Criterios de aceptación:
-
-El sistema valida credenciales y muestra mensajes de error si son incorrectas.
-
-HU12 – Control de acceso por roles
-
-Como administrador,
-
-quiero definir permisos según el rol del usuario,
-
-para restringir el acceso a ciertas funciones.
-Criterios de aceptación:
-
-Solo los administradores pueden modificar roles.
-
-Cada usuario ve únicamente las funciones que le corresponden.
-
-📊 Reportes e Informes
-
-HU13 – Generar informes de consultas
-
-Como veterinario o administrador,
-
-quiero generar informes de consultas realizadas por periodo de tiempo,
-
-para analizar la actividad del consultorio.
-Criterios de aceptación:
-
-Se debe poder filtrar por fechas y veterinario.
-
-El sistema genera el informe en pantalla.
-
-HU14 – Exportar informes
-
-Como usuario,
-
-quiero exportar los informes a PDF o Excel,
-
-para compartir o archivar la información.
-Criterios de aceptación:
-
-El sistema debe permitir elegir el formato.
-
-El archivo generado debe contener los datos visibles en pantalla.
-
-💾 Base de Datos y Seguridad
-
-HU15 – Almacenamiento de información
-
-Como desarrollador o administrador,
-
-quiero que toda la información se guarde en una base de datos MySQL,
-
-para asegurar la integridad y persistencia de los datos.
-Criterios de aceptación:
-
-La base de datos debe estar correctamente estructurada y normalizada.
-
-HU16 – Copias de seguridad
-
-Como administrador del sistema,
-
-quiero poder realizar copias de seguridad de la base de datos,
-
-para prevenir pérdida de información ante fallos.
-Criterios de aceptación:
-
-Se debe poder generar un backup manual o programado.
-
-El sistema confirma la correcta creación del archivo de respaldo.
+Si querés, también puedo:
+ agregar numeración de HU en tabla resumen  
+ versión para Trello, Jira o Notion  
+ añadir diagramas UML, ERD o casos de uso  
+¿Querés que lo convierta en PDF o presentación?
