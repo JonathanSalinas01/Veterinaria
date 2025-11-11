@@ -1,4 +1,4 @@
-## Historias de Usuario
+## Historias de Usuario para el primer sprint
 
 - **HU1 – Registro de dueño**
 - **HU2 – Editar y eliminar mascota existente (con confirmación)**
