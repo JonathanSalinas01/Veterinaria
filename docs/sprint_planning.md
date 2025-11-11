@@ -1,4 +1,4 @@
-#Scrum Poker - Estimación de Historias de Usuario
+## Scrum Poker - Estimación de Historias de Usuario
 
 A continuación se presentan las historias de usuario estimadas mediante la técnica de **Scrum Poker**, con su **prioridad** y **puntaje** asignado.
 
