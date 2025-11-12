@@ -14,8 +14,8 @@ HU11: Inicio de Sesión de Veterinarios
 
 Equipo de Desarrollo (Ejemplo):
 
-Pareja A: Ana y Carlos
+Pareja A: Jonathan y Araceli
 
-Pareja B: Juan y María
+Pareja B: Brandon y Diana
 
 Duración del Sprint: 2 semanas.
