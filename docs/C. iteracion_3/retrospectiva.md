@@ -7,7 +7,7 @@
 ##  ¿Qué salió bien?
 
 - La **HU13** y **HU14** se complementaron muy bien.  
-  El equipo **B (Brandon y Juan)** logró integrar la librería de **PDF** sin mayores problemas.  
+  El equipo **B (Brandon y Diana)** logró integrar la librería de **PDF** sin mayores problemas.  
 - La **funcionalidad de Backup (HU16)** fue simple pero muy valorada por el cliente (**Product Owner**) por la seguridad que brinda.  
 - Los **recordatorios visuales (HU9)** funcionan correctamente y abren la posibilidad de futuras automatizaciones de correos.
 
