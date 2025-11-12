@@ -1,25 +1,27 @@
-Iteración 3: Retrospectiva
+## Iteración 3: Retrospectiva
 
-Fecha: (Fin del Sprint 3)
+**Fecha:** (Fin del Sprint 3)
 
-¿Qué salió bien?
+---
 
-La HU13 y HU14 se complementaron muy bien. El equipo B (Juan y María) logró integrar la librería de PDF sin mayores problemas.
+##  ¿Qué salió bien?
 
-La funcionalidad de Backup (HU16) fue simple pero muy valorada por el cliente (Product Owner) por la seguridad que brinda.
+- La **HU13** y **HU14** se complementaron muy bien.  
+  El equipo **B (Juan y María)** logró integrar la librería de **PDF** sin mayores problemas.  
+- La **funcionalidad de Backup (HU16)** fue simple pero muy valorada por el cliente (**Product Owner**) por la seguridad que brinda.  
+- Los **recordatorios visuales (HU9)** funcionan correctamente y abren la posibilidad de futuras automatizaciones de correos.
 
-Los recordatorios visuales (HU9) funcionan y dan pie a la futura automatización de correos.
+---
 
-¿Qué no salió tan bien?
+##  ¿Qué no salió tan bien?
 
-La generación de PDF (HU14) es un poco lenta cuando el informe de consultas (HU13) devuelve muchos resultados (más de 500).
+- La **generación de PDF (HU14)** es algo lenta cuando el **informe de consultas (HU13)** devuelve más de **500 resultados**.  
+- Se detectó un **bug menor del Sprint 1**: si se elimina un Dueño, las mascotas quedan “huérfanas”, ya que no se implementó el **borrado en cascada o restricción** correspondiente.
 
-Se detectó un bug menor en el Sprint 1: Si se elimina un Dueño, las mascotas quedan "huérfanas" (no se implementó borrado en cascada o restricción).
+---
 
-Acciones de Mejora (Para el próximo Sprint)
+##  Acciones de Mejora (para el próximo Sprint)
 
-Optimización: Investigar cómo optimizar la generación de PDF (posiblemente con generación en segundo plano si los reportes son muy grandes).
-
-Manejo de Bugs: Crear una política para bugs. El bug de "Dueños huérfanos" se añade al Product Backlog y será priorizado por el Product Owner para el siguiente sprint.
-
-Revisión de Arquitectura: Asegurar que todas las relaciones de BD tengan las restricciones de borrado (DELETE) correctas.
+- **Optimización:** Investigar formas de optimizar la generación de PDF, considerando la **generación en segundo plano** para reportes extensos.  
+- **Manejo de Bugs:** Crear una **política formal de gestión de bugs**.  
+  El bug de *Dueños huérfanos* se añade al **Product Backlog** y será priorizado por el Product Owner
