@@ -1,21 +1,28 @@
-Sprint 1: Planificación (Sprint Planning)
+# 🐾 Sprint 1: Planificación (Sprint Planning)
 
-Objetivo del Sprint: Establecer las entidades centrales del sistema. El equipo debe poder registrar, editar y vincular dueños y mascotas. Además, se implementará el inicio de sesión básico.
+**Objetivo del Sprint:**  
+Establecer las entidades centrales del sistema. El equipo debe poder registrar, editar y vincular dueños y mascotas. Además, se implementará el inicio de sesión básico.
 
-Historias de Usuario Seleccionadas (del Product Backlog):
+---
 
-HU4: Registrar o Editar Dueño
+## 📋 Historias de Usuario Seleccionadas (del Product Backlog)
 
-HU1: Registrar Mascota
+- **HU4:** Registrar o Editar Dueño  
+- **HU1:** Registrar Mascota  
+- **HU3:** Asociar Mascota a Dueño  
+- **HU11:** Inicio de Sesión de Veterinarios  
 
-HU3: Asociar Mascota a Dueño
+---
 
-HU11: Inicio de Sesión de Veterinarios
+## 👩‍💻 Equipo de Desarrollo
 
-Equipo de Desarrollo (Ejemplo):
+| Pareja | Integrantes |
+|---------|--------------|
+| **Pareja A** | Jonathan y Araceli |
+| **Pareja B** | Brandon y Diana |
 
-Pareja A: Jonathan y Araceli
+---
 
-Pareja B: Brandon y Diana
+## ⏱️ Duración del Sprint
 
-Duración del Sprint: 2 semanas.
+**2 semanas**
