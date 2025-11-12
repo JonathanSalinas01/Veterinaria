@@ -1,4 +1,4 @@
-# 🐾 Sprint 2: Planificación (Sprint Planning)
+## Sprint 2: Planificación (Sprint Planning)
 
 **Objetivo del Sprint:**  
 Desarrollar el módulo clínico principal. El equipo debe poder registrar consultas, procedimientos y visualizar el historial completo de una mascota.
