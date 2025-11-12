@@ -191,10 +191,3 @@ quiero realizar copias de seguridad de la base de datos,
 - El sistema confirma la creación correcta del respaldo.
 
 ---
- **Documento completo, estilizado y listo para entregar.**
-
-Si querés, también puedo:
- agregar numeración de HU en tabla resumen  
- versión para Trello, Jira o Notion  
- añadir diagramas UML, ERD o casos de uso  
-¿Querés que lo convierta en PDF o presentación?
